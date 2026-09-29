@@ -18,6 +18,10 @@
   th, td { border-bottom: 1px solid #ccc; padding: 5px 6px; text-align: right; }
   th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align: left; }
   th { font-weight: 700; }
+  .temps { display: flex; gap: 8px; margin: 12px 0; }
+  button { font: inherit; font-size: 13px; background: #fff; color: #111; border: 1px solid #111; padding: 4px 10px; cursor: pointer; }
+  button.active { background: #111; color: #fff; }
+  [hidden] { display: none !important; }
 </style>
 </head>
 <body>
@@ -35,6 +39,26 @@
     “Leave” is the first time fewer than three of those oxygens remain inside 3.10 Å.
     In the 2 near / 1 far, 1 near / 2 far, and 3 far starts, leave is immediate by construction.
   </p>
+
+
+  <h2>Distance of the three t = 0 hydroxide oxygens</h2>
+  <p class="note">
+    Same definition as the pure-water page. The three traces are the three oxygens that are hydroxide at 0 ps.
+    Each frame they are reordered into nearest, middle and farthest, then averaged over the 50 replicas.
+    Shaded bands are one standard deviation. The dashed line is 3.10 Å and the dotted line is 5 Å.
+    The red mark is the first time the replica-averaged bound count of those three oxygens drops to two or fewer.
+    Left column, Nd. Right column, Dy. Rows are the four OH starting geometries.
+  </p>
+  <div class="temps" data-group="model">
+    <button type="button" class="active" data-model="uma">UMA-s-1.2.1</button>
+    <button type="button" data-model="dpa">DPA4C-Plus</button>
+  </div>
+  <figure class="panel" data-group="dist-uma">
+    <img src="figures/distance_uma-s-1p2p1.png" alt="UMA mean OH distances for four starts, Nd and Dy">
+  </figure>
+  <figure class="panel" data-group="dist-dpa" hidden>
+    <img src="figures/distance_DPA4C-Plus.png" alt="DPA mean OH distances for four starts, Nd and Dy">
+  </figure>
 
   <h2>Bound count of the three <em>t</em> = 0 hydroxides</h2>
   <p class="note">
@@ -96,5 +120,21 @@
     <li>Slurm jobs 58925634 (UMA, 25 nodes, 10 h 31 min) and 58925636 (DPA, 10 nodes, 6 h 58 min).</li>
   </ul>
 </main>
+<script>
+document.querySelectorAll('.temps[data-group="model"]').forEach(function (bar) {
+  bar.addEventListener("click", function (event) {
+    var button = event.target.closest("button");
+    if (!button) return;
+    var model = button.dataset.model;
+    bar.querySelectorAll("button").forEach(function (b) {
+      b.classList.toggle("active", b.dataset.model === model);
+    });
+    document.querySelectorAll(".panel").forEach(function (panel) {
+      if (panel.dataset.group.indexOf("dist-") !== 0) return;
+      panel.hidden = panel.dataset.group !== "dist-" + model;
+    });
+  });
+});
+</script>
 </body>
 </html>
