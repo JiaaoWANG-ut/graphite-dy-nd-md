@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dy and Nd on graphite · 50-replica MD</title>
+<style>
+  body { margin: 0; background: #fff; color: #111; font-family: "Liberation Sans", Helvetica, Arial, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 36px 20px 72px; }
+  h1 { font-size: 22px; line-height: 1.25; font-weight: 700; margin: 0 0 8px; }
+  h2 { font-size: 16px; margin: 2.2em 0 0.6em; }
+  p, li { font-size: 15px; line-height: 1.55; }
+  .kicker { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: #444; margin: 0 0 8px; }
+  figure { margin: 12px 0 8px; }
+  img { width: 100%; height: auto; background: #fff; }
+  .note { font-size: 13px; line-height: 1.45; color: #222; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0 18px; }
+  th, td { border-bottom: 1px solid #ccc; padding: 5px 6px; text-align: right; }
+  th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align: left; }
+  th { font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">150 ps NVT · 50 replicas · UMA-s-1.2.1 and DPA4C-Plus</p>
+  <h1>Dy and Nd hydroxides on graphite in water</h1>
+  <p>
+    Fixed-cell Langevin MD at 300 K for Dy and Nd on a two-layer graphite slab with water and three hydroxides.
+    Each of the four OH starting geometries was run 50 times with UMA-s-1.2.1 (omol, turbo) and with DPA4C-Plus (nvalchemi).
+    That is 800 trajectories of 150 ps at 1 fs/step. The 256 carbon atoms are frozen. Nd spin multiplicity is 4. Dy is 6.
+  </p>
+  <p>
+    The three traces in the analysis are the three oxygens that are hydroxide at <em>t</em> = 0.
+    An oxygen is bound when its metal–oxygen distance is below 3.10 Å.
+    “Leave” is the first time fewer than three of those oxygens remain inside 3.10 Å.
+    In the 2 near / 1 far, 1 near / 2 far, and 3 far starts, leave is immediate by construction.
+  </p>
+
+  <h2>Bound count of the three <em>t</em> = 0 hydroxides</h2>
+  <p class="note">
+    Solid lines are the mean over 50 replicas. Shaded bands are one standard deviation.
+    Blue is Dy. Orange is Nd. Rows are the four starting OH geometries.
+  </p>
+  <figure>
+    <img src="figures/nshell_uma-s-1p2p1.png" alt="UMA bound OH count versus time for four OH starts">
+  </figure>
+  <figure>
+    <img src="figures/nshell_DPA4C-Plus.png" alt="DPA bound OH count versus time for four OH starts">
+  </figure>
+
+  <h2>Leave times for the 3-near start</h2>
+  <p class="note">
+    Only the 3-near geometry begins with all three hydroxides inside 3.10 Å.
+    Under UMA, Dy leaves earlier than Nd (41/50 leave, mean 31.2 ps for Dy; 30/50 leave, mean 83.0 ps for Nd).
+    Under DPA the order flips: Nd leaves earlier (mean 24.3 ps) than Dy (mean 51.2 ps).
+  </p>
+  <figure>
+    <img src="figures/leave_hist_3near.png" alt="Leave-time histograms for the 3-near start">
+  </figure>
+
+  <h2>Summary over 50 replicas</h2>
+  <p class="note">
+    Leave count is how many of the 50 replicas lose a third bound OH oxygen within 150 ps.
+    Mean leave is the average leave time among those that leave. Mean bound is the 0–150 ps average of the bound count of the three <em>t</em> = 0 OH oxygens.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Model</th><th>Start</th><th>Metal</th><th>Leave</th><th>Stay</th><th>Mean leave / ps</th><th>Mean bound</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>UMA-s-1.2.1</td><td>3 near</td><td>Nd</td><td>30/50</td><td>20</td><td>83.0</td><td>2.52</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>3 near</td><td>Dy</td><td>41/50</td><td>9</td><td>31.2</td><td>2.40</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>2 near, 1 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>1.72</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>2 near, 1 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>1.64</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>1 near, 2 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>0.87</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>1 near, 2 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>0.92</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>3 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>0.25</td></tr>
+<tr><td>UMA-s-1.2.1</td><td>3 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>0.09</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Nd</td><td>49/50</td><td>1</td><td>24.3</td><td>2.54</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Dy</td><td>49/50</td><td>1</td><td>51.2</td><td>2.75</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>1.88</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>1.96</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>1.13</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>1.14</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Nd</td><td>50/50</td><td>0</td><td>0.0</td><td>0.44</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Dy</td><td>50/50</td><td>0</td><td>0.0</td><td>0.38</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Simulation</h2>
+  <ul>
+    <li>Cell 19.68 × 17.043 × 22.0 Å, 3D periodic. Composition: graphite (256 C) + Ln<sup>3+</sup> + 3 OH<sup>−</sup> + water, charge 0.</li>
+    <li>UMA-s-1.2.1 from <code>uma-s-1p2p1.pt</code>, fairchem turbo, task omol, TF32. Spin rewritten every force call.</li>
+    <li>DPA4C-Plus from <code>frozen.pt2</code>, nvalchemi neighbor list, <code>charge_spin = [0, multiplicity]</code>.</li>
+    <li>NVT Langevin, 1 fs, 150 ps, friction 1 ps<sup>−1</sup>, fixed cell, carbon fixed. Frames every 0.1 ps.</li>
+    <li>Slurm jobs 58925634 (UMA, 25 nodes, 10 h 31 min) and 58925636 (DPA, 10 nodes, 6 h 58 min).</li>
+  </ul>
+</main>
+</body>
+</html>

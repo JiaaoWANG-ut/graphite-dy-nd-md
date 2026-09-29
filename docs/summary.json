@@ -1,0 +1,146 @@
+[
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "3 near",
+    "metal": "Nd",
+    "leave_count": 30,
+    "stay_count": 20,
+    "mean_leave_ps": 83.0,
+    "mean_bound": 2.52
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "3 near",
+    "metal": "Dy",
+    "leave_count": 41,
+    "stay_count": 9,
+    "mean_leave_ps": 31.2,
+    "mean_bound": 2.4
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "2 near, 1 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.72
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "2 near, 1 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.64
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "1 near, 2 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.87
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "1 near, 2 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.92
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "3 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.25
+  },
+  {
+    "model": "UMA-s-1.2.1",
+    "variant": "3 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.09
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Nd",
+    "leave_count": 49,
+    "stay_count": 1,
+    "mean_leave_ps": 24.3,
+    "mean_bound": 2.54
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Dy",
+    "leave_count": 49,
+    "stay_count": 1,
+    "mean_leave_ps": 51.2,
+    "mean_bound": 2.75
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.88
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.96
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.13
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.14
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Nd",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.44
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Dy",
+    "leave_count": 50,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.38
+  }
+]
