@@ -1,0 +1,58 @@
+[
+  {
+    "id": "3near",
+    "title": "3 near",
+    "file": "models/Nd_3near.xyz",
+    "n_atoms": 716,
+    "pbc": true,
+    "cell": [
+      19.68,
+      17.0434,
+      22.0
+    ],
+    "metal": "Nd",
+    "spin": 4
+  },
+  {
+    "id": "2near1far",
+    "title": "2 near, 1 far",
+    "file": "models/Nd_2near1far.xyz",
+    "n_atoms": 713,
+    "pbc": true,
+    "cell": [
+      19.68,
+      17.0434,
+      22.0
+    ],
+    "metal": "Nd",
+    "spin": 4
+  },
+  {
+    "id": "1near2far",
+    "title": "1 near, 2 far",
+    "file": "models/Nd_1near2far.xyz",
+    "n_atoms": 710,
+    "pbc": true,
+    "cell": [
+      19.68,
+      17.0434,
+      22.0
+    ],
+    "metal": "Nd",
+    "spin": 4
+  },
+  {
+    "id": "3far",
+    "title": "3 far",
+    "file": "models/Nd_3far.xyz",
+    "n_atoms": 707,
+    "pbc": true,
+    "cell": [
+      19.68,
+      17.0434,
+      22.0
+    ],
+    "metal": "Nd",
+    "spin": 4
+  }
+]

@@ -22,7 +22,13 @@
   button { font: inherit; font-size: 13px; background: #fff; color: #111; border: 1px solid #111; padding: 4px 10px; cursor: pointer; }
   button.active { background: #111; color: #fff; }
   [hidden] { display: none !important; }
+  .viewer-wrap { position: relative; width: 100%; height: 440px; border: 1px solid #ccc; background: #fafafa; margin: 8px 0 6px; }
+  .viewer-wrap canvas { outline: none; }
+  .legend-atoms { font-size: 12px; color: #333; margin: 0 0 8px; }
+  .legend-atoms span { margin-right: 14px; white-space: nowrap; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/3dmol@2.4.2/build/3Dmol-min.js"></script>
 </head>
 <body>
 <main>
@@ -40,6 +46,25 @@
     In the 2 near / 1 far, 1 near / 2 far, and 3 far starts, leave is immediate by construction.
   </p>
 
+  <h2>Initial structure (interactive)</h2>
+  <p class="note">
+    Representative metal: Nd (spin multiplicity 4). Two-layer graphite (256 C, frozen in the MD) plus Nd(OH)<sub>3</sub> and water in a 19.68 × 17.04 × 22.0 Å cell.
+    Drag to rotate, scroll to zoom. The four buttons switch the OH near/far starting geometry.
+  </p>
+  <p class="legend-atoms">
+    <span><i class="swatch" style="background:#7B2D8E"></i>Nd</span>
+    <span><i class="swatch" style="background:#555555"></i>C</span>
+    <span><i class="swatch" style="background:#E53935"></i>O</span>
+    <span><i class="swatch" style="background:#BDBDBD;border:1px solid #999"></i>H</span>
+  </p>
+  <div class="temps" data-group="struct">
+    <button type="button" class="active" data-file="models/Nd_3near.xyz">3 near</button>
+    <button type="button" data-file="models/Nd_2near1far.xyz">2 near, 1 far</button>
+    <button type="button" data-file="models/Nd_1near2far.xyz">1 near, 2 far</button>
+    <button type="button" data-file="models/Nd_3far.xyz">3 far</button>
+  </div>
+  <div id="viewer" class="viewer-wrap"></div>
+  <p class="note" id="viewer-caption">Nd · 3 near · drag to rotate</p>
 
   <h2>Distance of the three t = 0 hydroxide oxygens</h2>
   <p class="note">
@@ -135,6 +160,44 @@ document.querySelectorAll('.temps[data-group="model"]').forEach(function (bar) {
     });
   });
 });
+
+var viewer = null;
+var cellA = 19.68, cellB = 17.043, cellC = 22.0;
+function styleViewer(v) {
+  v.setBackgroundColor(0xfafafa);
+  v.setStyle({}, { sphere: { scale: 0.18 }, stick: { radius: 0.06, colorscheme: "Jmol" } });
+  v.setStyle({ elem: "Nd" }, { sphere: { scale: 0.5, color: "#7B2D8E" } });
+  v.setStyle({ elem: "C" }, { sphere: { scale: 0.2, color: "#555555" } });
+  v.setStyle({ elem: "O" }, { sphere: { scale: 0.26, color: "#E53935" } });
+  v.setStyle({ elem: "H" }, { sphere: { scale: 0.12, color: "#F5F5F5" } });
+}
+function loadStructure(file, title) {
+  var element = document.getElementById("viewer");
+  if (!viewer) {
+    viewer = $3Dmol.createViewer(element, { backgroundColor: "0xfafafa" });
+  }
+  fetch(file).then(function (r) { return r.text(); }).then(function (data) {
+    viewer.clear();
+    var model = viewer.addModel(data, "xyz");
+    model.setCrystData(cellA, cellB, cellC, 90, 90, 90);
+    viewer.addUnitCell({ box: { color: "0x666666", opacity: 0.35 } });
+    styleViewer(viewer);
+    viewer.zoomTo();
+    viewer.render();
+    document.getElementById("viewer-caption").textContent = "Nd · " + title.toLowerCase() + " · drag to rotate";
+  });
+}
+document.querySelectorAll('.temps[data-group="struct"]').forEach(function (bar) {
+  bar.addEventListener("click", function (event) {
+    var button = event.target.closest("button");
+    if (!button) return;
+    bar.querySelectorAll("button").forEach(function (b) {
+      b.classList.toggle("active", b.dataset.file === button.dataset.file);
+    });
+    loadStructure(button.dataset.file, button.textContent.trim());
+  });
+});
+loadStructure("models/Nd_3near.xyz", "3 near");
 </script>
 </body>
 </html>
