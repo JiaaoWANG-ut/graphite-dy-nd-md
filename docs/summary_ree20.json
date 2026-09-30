@@ -1,0 +1,542 @@
+[
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Sc",
+    "leave_count": 0,
+    "stay_count": 20,
+    "mean_leave_ps": null,
+    "mean_bound": 3.0
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Y",
+    "leave_count": 2,
+    "stay_count": 18,
+    "mean_leave_ps": 1.8,
+    "mean_bound": 2.95
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "La",
+    "leave_count": 16,
+    "stay_count": 4,
+    "mean_leave_ps": 45.2,
+    "mean_bound": 2.9
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Ce",
+    "leave_count": 15,
+    "stay_count": 5,
+    "mean_leave_ps": 63.4,
+    "mean_bound": 2.96
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Pr",
+    "leave_count": 19,
+    "stay_count": 1,
+    "mean_leave_ps": 23.7,
+    "mean_bound": 2.6
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Pm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 42.7,
+    "mean_bound": 2.69
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Sm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 29.6,
+    "mean_bound": 2.52
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Eu",
+    "leave_count": 12,
+    "stay_count": 8,
+    "mean_leave_ps": 45.8,
+    "mean_bound": 2.92
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Gd",
+    "leave_count": 11,
+    "stay_count": 9,
+    "mean_leave_ps": 56.5,
+    "mean_bound": 2.94
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Tb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 45.5,
+    "mean_bound": 2.79
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Ho",
+    "leave_count": 11,
+    "stay_count": 9,
+    "mean_leave_ps": 51.4,
+    "mean_bound": 2.92
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Er",
+    "leave_count": 12,
+    "stay_count": 8,
+    "mean_leave_ps": 66.4,
+    "mean_bound": 2.84
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Tm",
+    "leave_count": 9,
+    "stay_count": 11,
+    "mean_leave_ps": 31.5,
+    "mean_bound": 2.69
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Yb",
+    "leave_count": 6,
+    "stay_count": 14,
+    "mean_leave_ps": 93.5,
+    "mean_bound": 2.92
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 near",
+    "metal": "Lu",
+    "leave_count": 1,
+    "stay_count": 19,
+    "mean_leave_ps": 85.0,
+    "mean_bound": 2.98
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Sc",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.0
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Y",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.05
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "La",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.08
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Ce",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.95
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Pr",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.97
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Pm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.05
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Sm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.74
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Eu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.13
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Gd",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.95
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Tb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.86
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Ho",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.07
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Er",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.15
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Tm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.05
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Yb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.9
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "2 near, 1 far",
+    "metal": "Lu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 2.25
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Sc",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.05
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Y",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.19
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "La",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.27
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Ce",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.99
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Pr",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.13
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Pm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.15
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Sm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.09
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Eu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.33
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Gd",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.45
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Tb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.34
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Ho",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.32
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Er",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.98
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Tm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 1.12
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Yb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.95
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "1 near, 2 far",
+    "metal": "Lu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.99
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Sc",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.4
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Y",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.68
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "La",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.54
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Ce",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.58
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Pr",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.56
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Pm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.67
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Sm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.74
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Eu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.51
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Gd",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.61
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Tb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.63
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Ho",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.59
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Er",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.65
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Tm",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.41
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Yb",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.2
+  },
+  {
+    "model": "DPA4C-Plus",
+    "variant": "3 far",
+    "metal": "Lu",
+    "leave_count": 20,
+    "stay_count": 0,
+    "mean_leave_ps": 0.0,
+    "mean_bound": 0.38
+  }
+]

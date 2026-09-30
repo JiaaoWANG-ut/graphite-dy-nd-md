@@ -136,6 +136,140 @@
     </tbody>
   </table>
 
+
+  <h2>Other REE on graphite (DPA, 20 replicas)</h2>
+  <p>
+    Same protocol as Dy/Nd above, for the remaining rare-earth metals
+    (Sc, Y, La–Lu except Dy and Nd). Only DPA4C-Plus was run, with 20 replicas per OH start.
+    That is 1200 trajectories (job 59118523, 20 nodes, 11 h 13 min).
+  </p>
+
+  <h2>REE distance of the three t = 0 hydroxide oxygens</h2>
+  <p class="note">
+    Same definition as above. Ensemble mean over 20 replicas with one-standard-deviation bands.
+    Choose a metal with the buttons. Panels are the four OH starting geometries.
+  </p>
+  <div class="temps" data-group="ree-metal" style="flex-wrap:wrap">
+    <button type="button" class="active" data-metal="Sc">Sc</button><button type="button" data-metal="Y">Y</button><button type="button" data-metal="La">La</button><button type="button" data-metal="Ce">Ce</button><button type="button" data-metal="Pr">Pr</button><button type="button" data-metal="Pm">Pm</button><button type="button" data-metal="Sm">Sm</button><button type="button" data-metal="Eu">Eu</button><button type="button" data-metal="Gd">Gd</button><button type="button" data-metal="Tb">Tb</button><button type="button" data-metal="Ho">Ho</button><button type="button" data-metal="Er">Er</button><button type="button" data-metal="Tm">Tm</button><button type="button" data-metal="Yb">Yb</button><button type="button" data-metal="Lu">Lu</button>
+  </div>
+  <figure class="panel" data-group="dist-ree">
+    <img src="figures/distance_ree_Sc.png" alt="DPA mean OH distances for Sc on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Y.png" alt="DPA mean OH distances for Y on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_La.png" alt="DPA mean OH distances for La on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Ce.png" alt="DPA mean OH distances for Ce on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Pr.png" alt="DPA mean OH distances for Pr on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Pm.png" alt="DPA mean OH distances for Pm on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Sm.png" alt="DPA mean OH distances for Sm on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Eu.png" alt="DPA mean OH distances for Eu on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Gd.png" alt="DPA mean OH distances for Gd on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Tb.png" alt="DPA mean OH distances for Tb on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Ho.png" alt="DPA mean OH distances for Ho on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Er.png" alt="DPA mean OH distances for Er on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Tm.png" alt="DPA mean OH distances for Tm on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Yb.png" alt="DPA mean OH distances for Yb on graphite">
+  </figure><figure class="panel" data-group="dist-ree" hidden>
+    <img src="figures/distance_ree_Lu.png" alt="DPA mean OH distances for Lu on graphite">
+  </figure>
+
+  <h2>REE bound count for the 3-near start</h2>
+  <p class="note">
+    Mean bound count of the three <em>t</em> = 0 OH oxygens versus time for every metal under DPA4C-Plus.
+    Right: leave fraction and time-averaged bound count for the 3-near start.
+  </p>
+  <figure>
+    <img src="figures/nshell_ree_3near.png" alt="DPA bound OH count versus time for REE 3-near starts">
+  </figure>
+  <figure>
+    <img src="figures/leave_bar_ree_3near.png" alt="Leave fraction and mean bound count across REE">
+  </figure>
+  <p class="note">Metals with at least five stays: Sc (20/20), Y (18/20), Ce (5/20), Eu (8/20), Gd (9/20), Ho (9/20), Er (8/20), Tm (11/20), Yb (14/20), Lu (19/20). Earliest mean leave among those that leave: Y 1.8 ps, Pr 23.7 ps, Sm 29.6 ps.</p>
+
+  <h2>REE summary over 20 replicas</h2>
+  <p class="note">
+    Leave count is how many of the 20 replicas lose a third bound OH oxygen within 150 ps.
+    Mean leave is the average leave time among those that leave. Mean bound is the 0–150 ps average.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Model</th><th>Start</th><th>Metal</th><th>Leave</th><th>Stay</th><th>Mean leave / ps</th><th>Mean bound</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>DPA4C-Plus</td><td>3 near</td><td>Sc</td><td>0/20</td><td>20</td><td>—</td><td>3.00</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Y</td><td>2/20</td><td>18</td><td>1.8</td><td>2.95</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>La</td><td>16/20</td><td>4</td><td>45.2</td><td>2.90</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Ce</td><td>15/20</td><td>5</td><td>63.4</td><td>2.96</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Pr</td><td>19/20</td><td>1</td><td>23.7</td><td>2.60</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Pm</td><td>20/20</td><td>0</td><td>42.7</td><td>2.69</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Sm</td><td>20/20</td><td>0</td><td>29.6</td><td>2.52</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Eu</td><td>12/20</td><td>8</td><td>45.8</td><td>2.92</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Gd</td><td>11/20</td><td>9</td><td>56.5</td><td>2.94</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Tb</td><td>20/20</td><td>0</td><td>45.5</td><td>2.79</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Ho</td><td>11/20</td><td>9</td><td>51.4</td><td>2.92</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Er</td><td>12/20</td><td>8</td><td>66.4</td><td>2.84</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Tm</td><td>9/20</td><td>11</td><td>31.5</td><td>2.69</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Yb</td><td>6/20</td><td>14</td><td>93.5</td><td>2.92</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 near</td><td>Lu</td><td>1/20</td><td>19</td><td>85.0</td><td>2.98</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Sc</td><td>20/20</td><td>0</td><td>0.0</td><td>2.00</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Y</td><td>20/20</td><td>0</td><td>0.0</td><td>2.05</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>La</td><td>20/20</td><td>0</td><td>0.0</td><td>2.08</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Ce</td><td>20/20</td><td>0</td><td>0.0</td><td>1.95</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Pr</td><td>20/20</td><td>0</td><td>0.0</td><td>1.97</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Pm</td><td>20/20</td><td>0</td><td>0.0</td><td>2.05</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Sm</td><td>20/20</td><td>0</td><td>0.0</td><td>1.74</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Eu</td><td>20/20</td><td>0</td><td>0.0</td><td>2.13</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Gd</td><td>20/20</td><td>0</td><td>0.0</td><td>1.95</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Tb</td><td>20/20</td><td>0</td><td>0.0</td><td>1.86</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Ho</td><td>20/20</td><td>0</td><td>0.0</td><td>2.07</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Er</td><td>20/20</td><td>0</td><td>0.0</td><td>2.15</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Tm</td><td>20/20</td><td>0</td><td>0.0</td><td>2.05</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Yb</td><td>20/20</td><td>0</td><td>0.0</td><td>1.90</td></tr>
+<tr><td>DPA4C-Plus</td><td>2 near, 1 far</td><td>Lu</td><td>20/20</td><td>0</td><td>0.0</td><td>2.25</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Sc</td><td>20/20</td><td>0</td><td>0.0</td><td>1.05</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Y</td><td>20/20</td><td>0</td><td>0.0</td><td>1.19</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>La</td><td>20/20</td><td>0</td><td>0.0</td><td>1.27</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Ce</td><td>20/20</td><td>0</td><td>0.0</td><td>0.99</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Pr</td><td>20/20</td><td>0</td><td>0.0</td><td>1.13</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Pm</td><td>20/20</td><td>0</td><td>0.0</td><td>1.15</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Sm</td><td>20/20</td><td>0</td><td>0.0</td><td>1.09</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Eu</td><td>20/20</td><td>0</td><td>0.0</td><td>1.33</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Gd</td><td>20/20</td><td>0</td><td>0.0</td><td>1.45</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Tb</td><td>20/20</td><td>0</td><td>0.0</td><td>1.34</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Ho</td><td>20/20</td><td>0</td><td>0.0</td><td>1.32</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Er</td><td>20/20</td><td>0</td><td>0.0</td><td>0.98</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Tm</td><td>20/20</td><td>0</td><td>0.0</td><td>1.12</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Yb</td><td>20/20</td><td>0</td><td>0.0</td><td>0.95</td></tr>
+<tr><td>DPA4C-Plus</td><td>1 near, 2 far</td><td>Lu</td><td>20/20</td><td>0</td><td>0.0</td><td>0.99</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Sc</td><td>20/20</td><td>0</td><td>0.0</td><td>0.40</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Y</td><td>20/20</td><td>0</td><td>0.0</td><td>0.68</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>La</td><td>20/20</td><td>0</td><td>0.0</td><td>0.54</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Ce</td><td>20/20</td><td>0</td><td>0.0</td><td>0.58</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Pr</td><td>20/20</td><td>0</td><td>0.0</td><td>0.56</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Pm</td><td>20/20</td><td>0</td><td>0.0</td><td>0.67</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Sm</td><td>20/20</td><td>0</td><td>0.0</td><td>0.74</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Eu</td><td>20/20</td><td>0</td><td>0.0</td><td>0.51</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Gd</td><td>20/20</td><td>0</td><td>0.0</td><td>0.61</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Tb</td><td>20/20</td><td>0</td><td>0.0</td><td>0.63</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Ho</td><td>20/20</td><td>0</td><td>0.0</td><td>0.59</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Er</td><td>20/20</td><td>0</td><td>0.0</td><td>0.65</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Tm</td><td>20/20</td><td>0</td><td>0.0</td><td>0.41</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Yb</td><td>20/20</td><td>0</td><td>0.0</td><td>0.20</td></tr>
+<tr><td>DPA4C-Plus</td><td>3 far</td><td>Lu</td><td>20/20</td><td>0</td><td>0.0</td><td>0.38</td></tr>
+    </tbody>
+  </table>
+
   <h2>Simulation</h2>
   <ul>
     <li>Cell 19.68 × 17.043 × 22.0 Å, 3D periodic. Composition: graphite (256 C) + Ln<sup>3+</sup> + 3 OH<sup>−</sup> + water, charge 0.</li>
@@ -146,6 +280,21 @@
   </ul>
 </main>
 <script>
+document.querySelectorAll('.temps[data-group="ree-metal"]').forEach(function (bar) {
+  bar.addEventListener("click", function (event) {
+    var button = event.target.closest("button");
+    if (!button) return;
+    var metal = button.dataset.metal;
+    bar.querySelectorAll("button").forEach(function (b) {
+      b.classList.toggle("active", b.dataset.metal === metal);
+    });
+    var imgs = document.querySelectorAll('.panel[data-group="dist-ree"]');
+    imgs.forEach(function (panel) {
+      var src = panel.querySelector("img").getAttribute("src") || "";
+      panel.hidden = src.indexOf("distance_ree_" + metal + ".png") < 0;
+    });
+  });
+});
 document.querySelectorAll('.temps[data-group="model"]').forEach(function (bar) {
   bar.addEventListener("click", function (event) {
     var button = event.target.closest("button");
